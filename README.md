@@ -1,6 +1,8 @@
 # react-app
 ## Deployed Link
 [Heroku](https://ishaq-react-app.herokuapp.com/)
+[Nitfly](https://focused-lichterman-9cce89.netlify.app/)
+
 ## GitHub PR
 
 
