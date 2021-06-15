@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.scss';
-import Header from './Header'
-import Footer from './Footer'
-import Form from './Form'
-import People from './People'
+import './design/design.scss';
+import Header from './components/header/header';
+import Footer from './Footer';
+import Form from './components/form/form';
+import People from './components/results/results';
 
 class App extends React.Component {
   constructor(props){
