@@ -1,0 +1,20 @@
+.res {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(46, 32, 32, 0.452);
+    z-index: 5;
+    // visibility: hidden;
+    .inres{
+        background-color: white;
+        width: 80%;
+        height: 700px;
+        overflow: auto;
+    }
+}
+.m{
+    background-color: white;
+        width: 70%;
+        height: 500px;
+        overflow: auto;
+}

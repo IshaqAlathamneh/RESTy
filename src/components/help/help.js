@@ -1,0 +1,1 @@
+export default (props) => <h3>This is our help page</h3>

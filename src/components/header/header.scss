@@ -1,0 +1,18 @@
+ul {
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0.692);
+    margin: 0 auto;
+    text-align: center;
+    li {
+        
+        display: inline;
+        margin-right: 50px;
+    }
+    li:hover {
+        background-color: rgb(165, 42, 42);
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

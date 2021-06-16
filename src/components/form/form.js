@@ -34,12 +34,14 @@ class Form extends React.Component {
                 }
             });
         }
+        let headers = raw.headers;
         let data = await raw.json();
+        let newObj = { headers, data}
         this.setState({show : false})
         console.log("data >>>>>>>>>>>>>>>>>>>>: ", data)
         if (data) {
             if (!localStorage.getItem("headers")) {
-                localStorage.setItem("headers", JSON.stringify([{ url, method }]));
+                localStorage.setItem("headers", JSON.stringify([{ url, method,res:newObj }]));
             } else {
                 let localData = JSON.parse(localStorage.getItem("headers"));
                 const found = localData.find(elem => {
@@ -50,8 +52,13 @@ class Form extends React.Component {
                     localStorage.setItem("headers", JSON.stringify(localData))
                 }
             }
+            let div = document.getElementById('output')
+            if(div){
+                div.style.visibility = 'visible'
+            }
+            
         }
-        myFun(data)
+        myFun(newObj)
     }
     render() {
         myFun = this.props.edit;
